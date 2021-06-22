@@ -1,2 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+#include <iostream>
+
+int proc(int n) {
+	
+	if (n == 0) return 1;
+
+	return 4 + proc(n - 1);
+}
+int main() {
+
+	std::cout<< proc(2);
+
+	return 0;
+}
